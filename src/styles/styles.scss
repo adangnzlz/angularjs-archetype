@@ -1,0 +1,8 @@
+// Load custom theme
+@import 'themes/_settings';
+// ** Bootstrap ** //
+// Bootstrap override
+$theme-colors: ("primary": $primary, "secondary": $secondary, "light": $light, "danger": $danger, "success": $success, "dark": $dark);
+
+@import './shared.scss';
+

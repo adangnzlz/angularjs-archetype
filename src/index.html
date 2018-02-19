@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- inject-css ../dist/css/styles.css -->
+    <!-- inject-css ../dist/css/header.css -->
+    <!-- inject-css ../dist/css/menu.css -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Angular version 1.5.8 -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="//unpkg.com/angular-ui-router@0.4.2/release/angular-ui-router.js"></script>
+    <script src="src/app/app.module.js"></script>
+    <script src="src/app/app.config.js"></script>
+    <script src="src/app/directives/directives.js"></script>
+    <script src="src/app/directives/header/header.js"></script>
+    <script src="src/app/directives/menu/menu.js"></script>
+
+</head>
+
+<body ng-app="app-module">
+    <div class="main-layout" ng-controller="app-controller">
+        <div class="header"></div>
+        <div class="menu"></div>
+        <div class="content">
+            <ui-view></ui-view>
+        </div>
+        <div class="footer"><h1>footer</h1></div>
+
+    </div>
+</body>
+
+</html>

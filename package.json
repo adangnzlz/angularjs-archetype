@@ -1,0 +1,28 @@
+{
+  "name": "prueba-inditex",
+  "version": "1.0.0",
+  "description": "prueba-inditex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-route": "^1.4.7",
+    "browser-sync": "^2.23.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^5.4.0",
+    "gulp-inject": "^4.3.0",
+    "gulp-inject-css": "^0.3.10",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-style-inject": "^0.1.0",
+    "jshint": "^2.9.5",
+    "run-sequence": "^2.2.1"
+  }
+}
