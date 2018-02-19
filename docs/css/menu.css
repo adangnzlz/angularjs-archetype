@@ -1,0 +1,20 @@
+#menu.vertical-menu {
+  width: calc(100% - 50px);
+  padding: 0px 25px;
+  margin-top: 65px; }
+  #menu.vertical-menu a {
+    line-height: 1;
+    color: #1e1e1e;
+    display: block;
+    margin: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700; }
+  #menu.vertical-menu li {
+    list-style-type: none; }
+    #menu.vertical-menu li ul {
+      display: block;
+      padding-left: 15px; }
+      #menu.vertical-menu li ul a {
+        font-size: 1rem; }

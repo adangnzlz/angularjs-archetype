@@ -1,0 +1,1 @@
+<a ng-if="!vm.data.despliega" ui-sref="{{vm.data.name.toLowerCase()}}" ui-sref-active="active">{{vm.data.name}}</a> <a ng-if="vm.data.despliega" ng-click="vm.open()">{{vm.data.name}}</a><ul ng-show="!hidden" ng-if="vm.data.despliega" class="submenu"><li ng-repeat="subitem in vm.data.subcategories"><div class="menuitem" data="subitem"></div></li></ul>

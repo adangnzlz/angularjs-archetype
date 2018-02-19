@@ -1,0 +1,154 @@
+{
+    "products": [
+        {
+            "id": 300030444,
+            "name": "Bandeja madera",
+            "image": "https://static.zarahome.net/8/photos3/2017/V/4/1/p/3515/040/052/3515040052_1_1_4.jpg?t=1482344665558",
+            "detail": {
+                "reference": "43515040-V2017",
+                "displayReference": "3515/040",
+                "colors": [
+                    {
+                        "id": "052",
+                        "name": "Natural",
+                        "sizes": [
+                            {
+                                "sku": 300038421,
+                                "name": "45.0 x 30.0 x 4.5 cm",
+                                "partnumber": "4351504005299-V2017",
+                                "mastersSizeId": "99",
+                                "price": "2999",
+                                "oldPrice": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": 300029717,
+            "name": "Bandeja madera",
+            "image": "https://static.zarahome.net/8/photos3/2017/V/4/1/p/3227/040/052/3227040052_1_1_4.jpg?t=1477503231033",
+            "detail": {
+                "reference": "43227040-V2017",
+                "displayReference": "3227/040",
+                "colors": [
+                    {
+                        "id": "052",
+                        "name": "Natural",
+                        "sizes": [
+                            {
+                                "sku": 300035875,
+                                "name": "35.0 x 24.0 x 4.0 cm",
+                                "partnumber": "4322704005299-V2017",
+                                "mastersSizeId": "99",
+                                "price": "799",
+                                "oldPrice": "1299"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": 300030449,
+            "name": "Bandeja cuadrada madera",
+            "image": "https://static.zarahome.net/8/photos3/2017/V/4/1/p/3509/040/999/3509040999_1_1_4.jpg?t=1478713158053",
+            "detail": {
+                "reference": "43509040-V2017",
+                "displayReference": "3509/040",
+                "colors": [
+                    {
+                        "id": "999",
+                        "name": "Indefinido",
+                        "sizes": [
+                            {
+                                "sku": 300038427,
+                                "name": "45.0 x 30.0 x 4.5 cm",
+                                "partnumber": "4350904099999-V2017",
+                                "mastersSizeId": "99",
+                                "price": "1999",
+                                "oldPrice": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": 300030442,
+            "name": "Bandeja asa múltiple",
+            "image": null,
+            "detail": {
+                "reference": "43517040-V2017",
+                "displayReference": "3517/040",
+                "colors": [
+                    {
+                        "id": "052",
+                        "name": "Natural",
+                        "sizes": [
+                            {
+                                "sku": 300038419,
+                                "name": "40.0 x 40.0 x 5.0 cm",
+                                "partnumber": "4351704005299-V2017",
+                                "mastersSizeId": "99",
+                                "price": "3999",
+                                "oldPrice": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": 300030447,
+            "name": "Bandeja cuadrada madera espejo",
+            "image": "https://static.zarahome.net/8/photos3/2017/V/4/1/p/3517/040/052/3517040052_1_1_4.jpg?t=1489684134260",
+            "detail": {
+                "reference": "43511040-V2017",
+                "displayReference": "3511/040",
+                "colors": [
+                    {
+                        "id": "052",
+                        "name": "Natural",
+                        "sizes": [
+                            {
+                                "sku": 300038425,
+                                "name": "42.5 x 30.5 x 5.0 cm",
+                                "partnumber": "4351104005299-V2017",
+                                "mastersSizeId": "99",
+                                "price": "1599",
+                                "oldPrice": "2999"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": 300030443,
+            "name": "Bandeja rectangular",
+            "image": "https://static.zarahome.net/8/photos3/2017/V/4/1/p/3516/040/052/3516040052_1_1_4.jpg?t=1489684111732",
+            "detail": {
+                "reference": "43516040-V2017",
+                "displayReference": "3516/040",
+                "colors": [
+                    {
+                        "id": "052",
+                        "name": "Natural",
+                        "sizes": [
+                            {
+                                "sku": 300038420,
+                                "name": "50.0 x 31.5 x 4.4 cm",
+                                "partnumber": "4351604005299-V2017",
+                                "mastersSizeId": "99",
+                                "price": "1999",
+                                "oldPrice": "3999"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

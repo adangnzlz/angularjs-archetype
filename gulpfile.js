@@ -51,7 +51,7 @@ gulp.task('hint', function () {
 gulp.task('index', function () {
     gulp.src('./src/index.html')
         .pipe(injectCSS())
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('./dist'));
 });
 // inject styles inline
 gulp.task('assets', function () {

@@ -1,0 +1,26 @@
+{
+    "categories": [
+        {
+            "id": 1020031184,
+            "name": "MESA",
+            "key": "E_V_A_MESA",
+            "despliega": true,
+            "subcategories": [
+                {
+                    "id": 1020031245,
+                    "name": "MUGS",
+                    "key": "E_V_A_M_MUGS",
+                    "subcategories": [],
+                    "despliega": false
+                },
+                {
+                    "id": 1020031250,
+                    "name": "BANDEJAS",
+                    "key": "E_V_A_M_BANDEJAS",
+                    "subcategories": [],
+                    "despliega": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+function menuDirective(){return{bindToController:!0,controller:function($scope,menuFactory){console.log("Menu is loaded"),menuFactory.getRoutes().success(function(data){$scope.data=data})},controllerAs:"vm",restrict:"C",scope:{controller:"="},templateUrl:"./templates/menu.html"}}angular.module("layouts.menu",[]).directive("menu",menuDirective);

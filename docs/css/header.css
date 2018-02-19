@@ -1,0 +1,31 @@
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse; }
+  #header a.link-header {
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.9rem; }
+    #header a.link-header i {
+      line-height: 2rem;
+      font-size: 1.4rem;
+      margin-right: 0.6rem; }
+    #header a.link-header:hover {
+      color: #888b8d; }
+      #header a.link-header:hover i {
+        color: #888b8d; }
+  #header a.link-header:nth-child(1) {
+    margin-right: 55px; }
+  #header .logo-container {
+    margin-right: auto;
+    width: 250px;
+    text-align: center; }
+    #header .logo-container a img {
+      max-width: 210px;
+      max-height: 100%; }

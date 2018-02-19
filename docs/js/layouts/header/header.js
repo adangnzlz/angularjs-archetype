@@ -1,0 +1,1 @@
+function headerDirective(){return{bindToController:!0,controller:function($scope){console.log("Header is loaded"),$scope.numItemsCart=0},controllerAs:"vm",restrict:"C",scope:{controller:"="},templateUrl:"./templates/header.html"}}angular.module("layouts.header",[]).directive("header",headerDirective);
