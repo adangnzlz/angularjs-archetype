@@ -1,1 +1,1 @@
-angular.module('directives', [ 'directives.header', 'directives.menu']);
+angular.module('directives', ['directives.menuitem']);

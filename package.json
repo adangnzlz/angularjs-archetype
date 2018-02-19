@@ -12,14 +12,17 @@
   "dependencies": {
     "angular": "1.5.8",
     "angular-route": "^1.4.7",
-    "browser-sync": "^2.23.6"
+    "browser-sync": "^2.23.6",
+    "connect-modrewrite": "^0.10.2"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.4.0",
     "gulp-inject": "^4.3.0",
     "gulp-inject-css": "^0.3.10",
     "gulp-jshint": "^2.1.0",
+    "gulp-minify": "^2.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-style-inject": "^0.1.0",
     "jshint": "^2.9.5",

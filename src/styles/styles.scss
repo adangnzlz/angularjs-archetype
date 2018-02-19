@@ -2,7 +2,7 @@
 @import 'themes/_settings';
 // ** Bootstrap ** //
 // Bootstrap override
-$theme-colors: ("primary": $primary, "secondary": $secondary, "light": $light, "danger": $danger, "success": $success, "dark": $dark);
+$theme-colors: ("primary": $primary,  "light": $light, "danger": $danger, "success": $success);
 
 @import './shared.scss';
 

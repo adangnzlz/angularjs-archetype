@@ -3,17 +3,21 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <style>
 html {
   font-size: 62.5%; }
 
 body {
-  background-color: white;
+  background-color: #fff;
   margin: 0px;
   font-size: 1.3rem;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Roboto', 'Lucida Sans Unicode', Helvetica, sans-serif; }
+  font-family: 'Roboto', 'Lucida Sans Unicode', Helvetica, sans-serif;
+  overflow-x: hidden; }
 
 .main-layout {
   display: grid;
@@ -24,6 +28,15 @@ body {
     grid-column: span 2; }
   .main-layout .menu {
     grid-row: span 2; }
+  .main-layout .content {
+    margin-top: 50px; }
+
+a {
+  color: #1e1e1e;
+  cursor: pointer; }
+  a:hover {
+    color: #1e1e1e;
+    text-decoration: underline; }
 
 </style>
     <style>
@@ -45,6 +58,10 @@ body {
       line-height: 2rem;
       font-size: 1.4rem;
       margin-right: 0.6rem; }
+    #header a.link-header:hover {
+      color: #888b8d; }
+      #header a.link-header:hover i {
+        color: #888b8d; }
   #header a.link-header:nth-child(1) {
     margin-right: 55px; }
   #header .logo-container {
@@ -57,30 +74,111 @@ body {
 
 </style>
     <style>
-.vertical-menu {
+#menu.vertical-menu {
   width: calc(100% - 50px);
   padding: 0px 25px;
-  margin-top: 25px; }
-
-.vertical-menu a {
-  color: black;
-  display: block;
-  padding: 3px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 700; }
+  margin-top: 65px; }
+  #menu.vertical-menu a {
+    line-height: 1;
+    color: #1e1e1e;
+    display: block;
+    margin: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700; }
+  #menu.vertical-menu li {
+    list-style-type: none; }
+    #menu.vertical-menu li ul {
+      display: block;
+      padding-left: 15px; }
+      #menu.vertical-menu li ul a {
+        font-size: 1rem; }
 
 </style>
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <!-- Angular version 1.5.8 -->
-    <script src="node_modules/angular/angular.min.js"></script>
-    <script src="//unpkg.com/angular-ui-router@0.4.2/release/angular-ui-router.js"></script>
-    <script src="src/app/app.module.js"></script>
-    <script src="src/app/app.config.js"></script>
-    <script src="src/app/directives/directives.js"></script>
-    <script src="src/app/directives/header/header.js"></script>
-    <script src="src/app/directives/menu/menu.js"></script>
+    <style>
+#footer {
+  border-top: 1px dotted #1e1e1e;
+  padding: 24px;
+  margin: 0px 15px; }
+  #footer a {
+    color: #666;
+    display: -webkit-box;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: 1rem; }
+    #footer a:hover {
+      color: #1e1e1e;
+      text-decoration: underline; }
+
+</style>
+    <style>
+#home {
+  padding: 10px; }
+  #home .img_home {
+    max-height: 100%;
+    max-width: 100%; }
+  #home .contenidoLino {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    font-family: 'Open Sans', sans-serif; }
+    #home .contenidoLino h1 {
+      color: white;
+      font-size: 5rem;
+      line-height: 5rem;
+      font-weight: 700;
+      margin: 0; }
+      #home .contenidoLino h1:before {
+        content: '/';
+        position: absolute;
+        font-style: italic;
+        font-size: 22rem;
+        left: -70px;
+        top: -4px;
+        font-family: 'Noto Serif', serif; }
+  #home .contenidoFlorist {
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif; }
+    #home .contenidoFlorist h1 {
+      font-size: 6rem;
+      line-height: 6rem;
+      text-transform: uppercase;
+      margin-bottom: 4%;
+      letter-spacing: 3.5rem;
+      font-weight: 700; }
+      @media (max-width: 1300px) {
+        #home .contenidoFlorist h1 {
+          font-size: 5rem;
+          line-height: 5rem; } }
+      @media (max-width: 992px) {
+        #home .contenidoFlorist h1 {
+          font-size: 3rem;
+          line-height: 3rem; } }
+    #home .contenidoFlorist h2 {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      font-family: 'EB Garamond', serif;
+      letter-spacing: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 4%; }
+      @media (max-width: 1300px) {
+        #home .contenidoFlorist h2 {
+          font-size: 2rem;
+          line-height: 2rem; } }
+      @media (max-width: 992px) {
+        #home .contenidoFlorist h2 {
+          font-size: 1.8rem;
+          line-height: 1.8rem; } }
+
+</style>
+
+
 
 </head>
 
@@ -91,9 +189,21 @@ body {
         <div class="content">
             <ui-view></ui-view>
         </div>
-        <div class="footer"><h1>footer</h1></div>
-
+        <div class="footer"></div>
     </div>
 </body>
-
+    <!-- Angular version 1.5.8 -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="//unpkg.com/angular-ui-router@0.4.2/release/angular-ui-router.js"></script>
+    <script src="dist/js/app.module-debug.js"></script>
+    <script src="dist/js/app.controller-debug.js"></script>
+    <script src="dist/js/layouts/layouts-debug.js"></script>
+    <script src="dist/js/factories/factories-debug.js"></script>
+    <script src="dist/js/directives/directives-debug.js"></script>
+    <script src="dist/js/factories/menu/menu.factory-debug.js"></script>
+    <script src="dist/js/layouts/header/header-debug.js"></script>
+    <script src="dist/js/layouts/menu/menu-debug.js"></script>
+    <script src="dist/js/layouts/footer/footer-debug.js"></script>
+    <script src="dist/js/layouts/home/home-debug.js"></script>
+    <script src="dist/js/directives/menuitem/menuitem-debug.js"></script>
 </html>

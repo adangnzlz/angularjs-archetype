@@ -1,3 +1,5 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/themes/_settings.scss';
 #header {
     width: 100%;
     position: fixed;
@@ -16,6 +18,12 @@
             line-height: 2rem;
             font-size: 1.4rem;
             margin-right: 0.6rem;
+        }
+        &:hover {
+            color: $light;
+            i {
+                color: $light;
+            }
         }
     }
     a.link-header:nth-child(1) {

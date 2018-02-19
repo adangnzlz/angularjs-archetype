@@ -5,12 +5,13 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: $background;
     margin: 0px;
     font-size: 1.3rem;
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
     font-family: 'Roboto', 'Lucida Sans Unicode', Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 .main-layout {
@@ -27,6 +28,17 @@ body {
     .menu {
         grid-row: span 2;
     }
-    .content {}
+    .content {
+        margin-top: 50px;
+    }
     .footer {}
+}
+
+a {
+    color: $primary;
+    cursor: pointer;
+    &:hover {
+        color: $primary;
+        text-decoration: underline;
+    }
 }

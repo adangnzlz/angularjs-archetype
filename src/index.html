@@ -3,18 +3,16 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <!-- inject-css ../dist/css/styles.css -->
     <!-- inject-css ../dist/css/header.css -->
     <!-- inject-css ../dist/css/menu.css -->
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <!-- Angular version 1.5.8 -->
-    <script src="node_modules/angular/angular.min.js"></script>
-    <script src="//unpkg.com/angular-ui-router@0.4.2/release/angular-ui-router.js"></script>
-    <script src="src/app/app.module.js"></script>
-    <script src="src/app/app.config.js"></script>
-    <script src="src/app/directives/directives.js"></script>
-    <script src="src/app/directives/header/header.js"></script>
-    <script src="src/app/directives/menu/menu.js"></script>
+    <!-- inject-css ../dist/css/footer.css -->
+    <!-- inject-css ../dist/css/home.css -->
+
+
 
 </head>
 
@@ -25,9 +23,21 @@
         <div class="content">
             <ui-view></ui-view>
         </div>
-        <div class="footer"><h1>footer</h1></div>
-
+        <div class="footer"></div>
     </div>
 </body>
-
+    <!-- Angular version 1.5.8 -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="//unpkg.com/angular-ui-router@0.4.2/release/angular-ui-router.js"></script>
+    <script src="dist/js/app.module-debug.js"></script>
+    <script src="dist/js/app.controller-debug.js"></script>
+    <script src="dist/js/layouts/layouts-debug.js"></script>
+    <script src="dist/js/factories/factories-debug.js"></script>
+    <script src="dist/js/directives/directives-debug.js"></script>
+    <script src="dist/js/factories/menu/menu.factory-debug.js"></script>
+    <script src="dist/js/layouts/header/header-debug.js"></script>
+    <script src="dist/js/layouts/menu/menu-debug.js"></script>
+    <script src="dist/js/layouts/footer/footer-debug.js"></script>
+    <script src="dist/js/layouts/home/home-debug.js"></script>
+    <script src="dist/js/directives/menuitem/menuitem-debug.js"></script>
 </html>

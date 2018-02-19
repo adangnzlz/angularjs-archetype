@@ -10,10 +10,13 @@ function menuDirective() {
         templateUrl: './dist/templates/menu.html'
     };
 
-    function MenuController($scope) {
+    function MenuController($scope, menuFactory) {
         console.log('Menu is loaded');
+        menuFactory.getRoutes().success(function (data) {
+            $scope.data = data;
+        });
     }
 }
 
-angular.module('directives.menu', [])
+angular.module('layouts.menu', [])
     .directive('menu', menuDirective);

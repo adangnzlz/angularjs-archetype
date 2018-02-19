@@ -16,5 +16,5 @@ function headerDirective() {
     }
 }
 
-angular.module('directives.header', [])
+angular.module('layouts.header', [])
     .directive('header', headerDirective);

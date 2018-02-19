@@ -6,8 +6,11 @@ const jshint = require('gulp-jshint');
 const injectCSS = require('gulp-inject-css');
 const runSequence = require('run-sequence');
 const htmlmin = require('gulp-html-minifier');
+const minify = require('gulp-minify');
 const flatten = require('gulp-flatten');
+var inject = require('gulp-inject');
 
+// var modRewrite = require('connect-modrewrite');
 
 gulp.task('sass', function () {
     return gulp.src(['./src/app/**/*.scss', './src/styles/styles.scss'])
@@ -16,13 +19,27 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./dist/css'));
 });
 
-gulp.task('minify', function () {
+gulp.task('minifyhtml', function () {
     gulp.src('./src/app/**/*.html')
         .pipe(htmlmin({ collapseWhitespace: true, ignorePath: '/assets' }))
         .pipe(flatten())
         .pipe(gulp.dest('./dist/templates'))
 });
 
+
+gulp.task('jsmin', function () {
+    gulp.src('src/app/**/*.js')
+        .pipe(minify({
+            ext: {
+                src: '-debug.js',
+                min: '.js'
+            },
+            exclude: ['tasks'],
+            mangle: false,
+            ignoreFiles: ['.combo.js', '-min.js']
+        }))
+        .pipe(gulp.dest('dist/js'))
+});
 
 gulp.task('hint', function () {
     return gulp.src('src/**/*.js')
@@ -43,16 +60,22 @@ gulp.task('assets', function () {
         .pipe(gulp.dest('dist/assets'));
 });
 
+
+
 // watch files for changes and reload
 gulp.task('serve', function () {
     browserSync({
-        server: {
-        }
+        server: {}
+        // ,
+        // middleware: modRewrite([
+        //     '!\\.\\w+$ /index.html [L]'
+        // ])
     });
-    gulp.watch(['dist/**/*.css', 'src/**/*.scss', 'src/**/*.html'], function (callback) { runSequence('sass', 'minify', 'index') });
-    gulp.watch(['src/**/*.js', 'src/index.html'], function (callback) { runSequence('hint', 'minify', 'index') });
+    gulp.watch(['src/assets/**/*'], function (callback) { runSequence('assets') });
+    gulp.watch(['dist/**/*.css', 'src/**/*.scss', 'src/**/*.html'], function (callback) { runSequence('sass', 'minifyhtml', 'index') });
+    gulp.watch(['src/**/*.js', 'src/index.html'], function (callback) { runSequence('hint', 'minifyhtml', 'jsmin', 'index') });
     gulp.watch(['index.html'], reload);
 });
 
 
-gulp.task('default', function (callback) { runSequence('assets', 'hint', 'sass', 'minify', 'index', 'serve') });
+gulp.task('default', function (callback) { runSequence('assets', 'hint', 'sass', 'minifyhtml', 'jsmin', 'index', 'serve') });
