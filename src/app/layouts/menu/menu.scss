@@ -4,7 +4,7 @@
     &.vertical-menu {
         width: 250px;
         padding: 0px 25px;
-        margin-top: 65px;
+        margin-top: 15px;
         position: fixed;
         max-height: calc(100% - 116px);
         overflow-y: auto;
@@ -25,6 +25,11 @@
                 padding-left: 15px;
                 a {
                     font-size: 1rem;
+                    @media (max-width: 900px) {
+                        font-size: 1.3rem;
+                        font-weight: 300;
+                        margin: 15px 0px;
+                    }
                 }
             }
         }

@@ -11,6 +11,7 @@ function menuDirective() {
     };
 
     function MenuController($scope, menuService) {
+        vm = this;
         menuService.getRoutes().success(function (data) {
             $scope.data = data;
         });

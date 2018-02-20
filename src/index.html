@@ -6,6 +6,7 @@
     <base href="/dist">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta content="Encuentra las últimas tendencias en ropa de cama de la nueva colección de Zara Home. Juegos de sábanas, fundas nórdicas o mantas de algodón o lino."
         name="description">
     <link rel="shortcut icon" type="image/x-icon" href="https://www.zarahome.com/static/itxwebstandard/images/favicon.ico?t=2018020901370911db1524166022">
@@ -19,16 +20,18 @@
     <!-- inject-css ../dist/css/home.css -->
     <!-- inject-css ../dist/css/landscape.css -->
     <!-- inject-css ../dist/css/article.css -->
+    <!-- inject-css ../dist/css/menuitem.css -->
+
 
 
 
 </head>
 
 <body lang="ES-es" ng-app="app-module">
-    <div class="main-layout" ng-controller="app-controller">
+    <div class="main-layout" ng-controller="app-controller as vm">
         <header></header>
-        <menu></menu>
-        <div class="content">
+        <menu  ng-class="{ 'expanded': show}" ></menu>
+        <div ng-click="vm.close()" class="content">
             <ui-view autoscroll="false"></ui-view>
         </div>
         <footer></footer>
