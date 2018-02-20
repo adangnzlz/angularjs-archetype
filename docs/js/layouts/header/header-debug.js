@@ -11,7 +11,13 @@ function headerDirective() {
     };
 
     function HeaderController($scope) {
+        vm = this;
         $scope.numItemsCart = 0;
+
+        vm.toggle = function(){
+            $scope.$emit('toggle', {})
+        }
+
     }
 }
 

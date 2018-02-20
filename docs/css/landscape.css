@@ -10,6 +10,9 @@
     left: 0;
     width: 100%;
     text-align: center; }
+    @media (max-width: 767px) {
+      #landscape .contenidoFloristBottom {
+        display: none; } }
     #landscape .contenidoFloristBottom h3 {
       font-size: 1.5rem;
       display: inline-block;
@@ -18,10 +21,14 @@
       font-weight: 700; }
   #landscape .contenidoFlorist {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 17%;
     text-align: left;
     font-family: 'Open Sans', sans-serif; }
+    @media (max-width: 767px) {
+      #landscape .contenidoFlorist {
+        font-size: 2rem;
+        line-height: 2rem; } }
     #landscape .contenidoFlorist h1 {
       font-size: 6rem;
       line-height: 6rem;
@@ -33,10 +40,14 @@
         #landscape .contenidoFlorist h1 {
           font-size: 5rem;
           line-height: 5rem; } }
-      @media (max-width: 992px) {
+      @media (max-width: 900px) {
         #landscape .contenidoFlorist h1 {
           font-size: 3rem;
           line-height: 3rem; } }
+      @media (max-width: 767px) {
+        #landscape .contenidoFlorist h1 {
+          font-size: 2rem;
+          line-height: 2rem; } }
     #landscape .contenidoFlorist h2 {
       font-size: 2.5rem;
       line-height: 2.5rem;
@@ -48,7 +59,11 @@
         #landscape .contenidoFlorist h2 {
           font-size: 2rem;
           line-height: 2rem; } }
-      @media (max-width: 992px) {
+      @media (max-width: 900px) {
         #landscape .contenidoFlorist h2 {
           font-size: 1.8rem;
           line-height: 1.8rem; } }
+      @media (max-width: 767px) {
+        #landscape .contenidoFlorist h2 {
+          font-size: 1.3rem;
+          line-height: 1.3rem; } }

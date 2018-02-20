@@ -6,6 +6,7 @@
     <!-- <base href="/dist"> -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta content="Encuentra las últimas tendencias en ropa de cama de la nueva colección de Zara Home. Juegos de sábanas, fundas nórdicas o mantas de algodón o lino."
         name="description">
     <link rel="shortcut icon" type="image/x-icon" href="https://www.zarahome.com/static/itxwebstandard/images/favicon.ico?t=2018020901370911db1524166022">
@@ -25,18 +26,29 @@ body {
   font-family: 'Roboto', 'Lucida Sans Unicode', Helvetica, sans-serif;
   overflow-x: hidden; }
 
-.main-layout {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  grid-template-rows: 50px auto 50px;
-  grid-auto-flow: dense; }
-  .main-layout header {
-    grid-column: span 2; }
-  .main-layout menu {
-    grid-row: 2 / -1;
-    padding: 0px; }
-  .main-layout .content {
-    margin-top: 50px; }
+.main-layout menu {
+  padding: 0px;
+  position: fixed;
+  margin-top: 0px;
+  height: 100%;
+  width: 250px;
+  background: white;
+  z-index: 99;
+  margin-left: 0px;
+  -webkit-transition: margin 0.3s;
+  transition: margin 0.3s; }
+  @media (max-width: 900px) {
+    .main-layout menu {
+      margin-left: -250px; }
+      .main-layout menu.expanded {
+        margin-left: 0px; } }
+
+.main-layout .content {
+  margin-top: 100px;
+  margin-left: 250px; }
+  @media (max-width: 900px) {
+    .main-layout .content {
+      margin-left: 0px; } }
 
 a {
   color: #1e1e1e;
@@ -52,9 +64,10 @@ a {
   grid-gap: 20px;
   justify-content: center;
   padding: 15px; }
-  @media (max-width: 992px) {
+  @media (max-width: 1024px) {
     #article-section .articcle-item {
       grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px;
       padding: 5px; } }
 
 .line-through {
@@ -82,12 +95,18 @@ a {
       line-height: 2rem;
       font-size: 1.4rem;
       margin-right: 0.6rem; }
+    @media (max-width: 900px) {
+      #header a.link-header span {
+        display: none; } }
     #header a.link-header:hover {
       color: #888b8d; }
       #header a.link-header:hover i {
         color: #888b8d; }
   #header a.link-header:nth-child(1) {
     margin-right: 55px; }
+    @media (max-width: 900px) {
+      #header a.link-header:nth-child(1) {
+        margin-right: 15px; } }
   #header .logo-container {
     margin-right: auto;
     width: 250px;
@@ -95,13 +114,29 @@ a {
     #header .logo-container a img {
       max-width: 210px;
       max-height: 100%; }
+      @media (max-width: 900px) {
+        #header .logo-container a img {
+          max-width: 150px;
+          margin: auto; } }
+    @media (max-width: 900px) {
+      #header .logo-container {
+        margin: auto; } }
+  #header .hamburger {
+    display: none;
+    width: 50px;
+    text-align: center; }
+    #header .hamburger i {
+      font-size: 20px; }
+    @media (max-width: 900px) {
+      #header .hamburger {
+        display: block; } }
 
 </style>
     <style>
 #menu.vertical-menu {
   width: 250px;
   padding: 0px 25px;
-  margin-top: 65px;
+  margin-top: 15px;
   position: fixed;
   max-height: calc(100% - 116px);
   overflow-y: auto; }
@@ -121,6 +156,11 @@ a {
       padding-left: 15px; }
       #menu.vertical-menu li ul a {
         font-size: 1rem; }
+        @media (max-width: 900px) {
+          #menu.vertical-menu li ul a {
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin: 15px 0px; } }
 
 </style>
     <style>
@@ -128,6 +168,8 @@ a {
   border-top: 1px dotted #1e1e1e;
   padding: 24px;
   margin: 0px 15px; }
+  #footer > div {
+    margin: 10px 0px; }
   #footer a {
     color: #666;
     display: -webkit-box;
@@ -155,6 +197,9 @@ a {
     left: 0;
     width: 100%;
     text-align: center; }
+    @media (max-width: 767px) {
+      #landscape .contenidoFloristBottom {
+        display: none; } }
     #landscape .contenidoFloristBottom h3 {
       font-size: 1.5rem;
       display: inline-block;
@@ -163,10 +208,14 @@ a {
       font-weight: 700; }
   #landscape .contenidoFlorist {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 17%;
     text-align: left;
     font-family: 'Open Sans', sans-serif; }
+    @media (max-width: 767px) {
+      #landscape .contenidoFlorist {
+        font-size: 2rem;
+        line-height: 2rem; } }
     #landscape .contenidoFlorist h1 {
       font-size: 6rem;
       line-height: 6rem;
@@ -178,10 +227,14 @@ a {
         #landscape .contenidoFlorist h1 {
           font-size: 5rem;
           line-height: 5rem; } }
-      @media (max-width: 992px) {
+      @media (max-width: 900px) {
         #landscape .contenidoFlorist h1 {
           font-size: 3rem;
           line-height: 3rem; } }
+      @media (max-width: 767px) {
+        #landscape .contenidoFlorist h1 {
+          font-size: 2rem;
+          line-height: 2rem; } }
     #landscape .contenidoFlorist h2 {
       font-size: 2.5rem;
       line-height: 2.5rem;
@@ -193,24 +246,14 @@ a {
         #landscape .contenidoFlorist h2 {
           font-size: 2rem;
           line-height: 2rem; } }
-      @media (max-width: 992px) {
+      @media (max-width: 900px) {
         #landscape .contenidoFlorist h2 {
           font-size: 1.8rem;
           line-height: 1.8rem; } }
-
-</style>
-    <style>
-#mugs .mugs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-  grid-gap: 20px;
-  justify-content: center;
-  padding: 15px; }
-  @media (max-width: 992px) {
-    #mugs .mugs {
-      grid-template-columns: repeat(2, 1fr);
-      padding: 5px; } }
+      @media (max-width: 767px) {
+        #landscape .contenidoFlorist h2 {
+          font-size: 1.3rem;
+          line-height: 1.3rem; } }
 
 </style>
     <style>
@@ -251,17 +294,24 @@ a {
       color: #cc0256; }
 
 </style>
+    <style>
+@media (min-width: 900px) {
+  #menuitem .hide {
+    display: none !important; } }
+
+</style>
+
 
 
 
 </head>
 
 <body lang="ES-es" ng-app="app-module">
-    <div class="main-layout" ng-controller="app-controller">
+    <div class="main-layout" ng-controller="app-controller as vm">
         <header></header>
-        <menu></menu>
-        <div class="content">
-            <ui-view></ui-view>
+        <menu  ng-class="{ 'expanded': show}" ></menu>
+        <div ng-click="vm.close()" class="content">
+            <ui-view autoscroll="false"></ui-view>
         </div>
         <footer></footer>
     </div>

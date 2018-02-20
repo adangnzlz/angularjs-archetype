@@ -1,1 +1,1 @@
-!function(){"use strict";angular.module("app-module").controller("app-controller",function($scope){$scope.message="Hello ZH"})}();
+!function(){"use strict";angular.module("app-module").controller("app-controller",function($scope){var vm=this;$scope.show=!1,$scope.$on("toggle",function(event,data){$scope.show=!$scope.show}),$scope.$on("close",function(event,data){vm.close()}),vm.close=function(){$scope.show=!1}})}();

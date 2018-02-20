@@ -1,5 +1,5 @@
 (function () {
-
+    // provider para crear estados en tiempo de ejecución
     function appStateProvider($stateProvider) {
         this.$get = function ($state) {
             return {

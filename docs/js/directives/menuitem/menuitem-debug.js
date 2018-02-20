@@ -18,7 +18,9 @@ function menuItemDirective() {
         vm.open = function(){
             $scope.hidden = false;
         };
-
+        vm.close = function () {
+            $scope.$emit('close', {})
+        }
     }
 }
 

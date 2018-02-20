@@ -18,12 +18,18 @@
       line-height: 2rem;
       font-size: 1.4rem;
       margin-right: 0.6rem; }
+    @media (max-width: 900px) {
+      #header a.link-header span {
+        display: none; } }
     #header a.link-header:hover {
       color: #888b8d; }
       #header a.link-header:hover i {
         color: #888b8d; }
   #header a.link-header:nth-child(1) {
     margin-right: 55px; }
+    @media (max-width: 900px) {
+      #header a.link-header:nth-child(1) {
+        margin-right: 15px; } }
   #header .logo-container {
     margin-right: auto;
     width: 250px;
@@ -31,3 +37,19 @@
     #header .logo-container a img {
       max-width: 210px;
       max-height: 100%; }
+      @media (max-width: 900px) {
+        #header .logo-container a img {
+          max-width: 150px;
+          margin: auto; } }
+    @media (max-width: 900px) {
+      #header .logo-container {
+        margin: auto; } }
+  #header .hamburger {
+    display: none;
+    width: 50px;
+    text-align: center; }
+    #header .hamburger i {
+      font-size: 20px; }
+    @media (max-width: 900px) {
+      #header .hamburger {
+        display: block; } }
