@@ -1,0 +1,53 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/themes/_settings.scss';
+#article {
+    .img-container {
+        position: relative;
+        img {
+            max-width: 100%;
+            min-height: 100%;
+            cursor: pointer;
+            &:hover {}
+        }
+        span {
+            display: none;
+            position: absolute;
+            top: calc(50% - 15px);
+            left: calc(50% - 15px);
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+            i {
+                font-size: 30px;
+                color: $light;
+            }
+        }
+        &:hover {
+            span {
+                display: block;
+            }
+        }
+    }
+    .article_details {
+        margin: 25px 0px;
+        p {
+            margin-bottom: 0px;
+            font-size: 1rem;
+            font-weight: bolder;
+            &.title {
+                cursor: pointer;
+                font-weight: normal;
+                margin-bottom: 20px;
+                &:hover {
+                    font-weight: bolder;
+                    color: $light;
+                }
+            }
+            &.price {
+                color: $danger;
+            }
+            &.oldprice {
+            }
+        }
+    }
+}

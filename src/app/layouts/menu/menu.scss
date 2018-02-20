@@ -2,9 +2,12 @@
 @import '../../../styles/themes/_settings.scss';
 #menu {
     &.vertical-menu {
-        width: calc(100% - 50px);
+        width: 250px;
         padding: 0px 25px;
         margin-top: 65px;
+        position: fixed;
+        max-height: calc(100% - 116px);
+        overflow-y: auto;
         a {
             line-height: 1;
             color: $primary;

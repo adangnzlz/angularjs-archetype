@@ -1,0 +1,1 @@
+!function(){"use strict";angular.module("app-module").config(function($locationProvider,$urlRouterProvider,$stateProvider){$locationProvider.html5Mode(!0),$urlRouterProvider.otherwise("/")})}();

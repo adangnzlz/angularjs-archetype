@@ -18,7 +18,7 @@
                                 "partnumber": "4151521048599-V2017",
                                 "mastersSizeId": "99",
                                 "price": "799",
-                                "oldPrice": null
+                                "oldPrice": "999"
                             }
                         ]
                     }
@@ -119,6 +119,22 @@
                                 "mastersSizeId": "99",
                                 "price": "599",
                                 "oldPrice": null
+                            },
+                            {
+                                "sku": 300293279,
+                                "name": "10.5 x 9.5 x 9.5 cm",
+                                "partnumber": "4167221025099-I2017",
+                                "mastersSizeId": "99",
+                                "price": "999",
+                                "oldPrice": null
+                            },
+                            {
+                                "sku": 300293279,
+                                "name": "10.5 x 9.5 x 9.5 cm",
+                                "partnumber": "4167221025099-I2017",
+                                "mastersSizeId": "99",
+                                "price": "799",
+                                "oldPrice": null
                             }
                         ]
                     }
@@ -142,8 +158,24 @@
                                 "name": "10.0 x 9.0 x 9.0 cm",
                                 "partnumber": "4740221025099-I2017",
                                 "mastersSizeId": "99",
+                                "price": "399",
+                                "oldPrice": "459"
+                            },
+                            {
+                                "sku": 300290129,
+                                "name": "10.0 x 9.0 x 9.0 cm",
+                                "partnumber": "4740221025099-I2017",
+                                "mastersSizeId": "99",
+                                "price": "299",
+                                "oldPrice": "359"
+                            },
+                            {
+                                "sku": 300290129,
+                                "name": "10.0 x 9.0 x 9.0 cm",
+                                "partnumber": "4740221025099-I2017",
+                                "mastersSizeId": "99",
                                 "price": "199",
-                                "oldPrice": null
+                                "oldPrice": "259"
                             }
                         ]
                     }

@@ -3,16 +3,15 @@ function menuDirective() {
         bindToController: true,
         controller: MenuController,
         controllerAs: 'vm',
-        restrict: 'C',
+        restrict: 'E',
         scope: {
             controller: '='
         },
         templateUrl: './templates/menu.html'
     };
 
-    function MenuController($scope, menuFactory) {
-        console.log('Menu is loaded');
-        menuFactory.getRoutes().success(function (data) {
+    function MenuController($scope, menuService) {
+        menuService.getRoutes().success(function (data) {
             $scope.data = data;
         });
     }

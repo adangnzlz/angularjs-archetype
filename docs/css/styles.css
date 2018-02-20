@@ -15,10 +15,11 @@ body {
   grid-template-columns: 250px 1fr;
   grid-template-rows: 50px auto 50px;
   grid-auto-flow: dense; }
-  .main-layout .header {
+  .main-layout header {
     grid-column: span 2; }
-  .main-layout .menu {
-    grid-row: span 2; }
+  .main-layout menu {
+    grid-row: 2 / -1;
+    padding: 0px; }
   .main-layout .content {
     margin-top: 50px; }
 
@@ -28,3 +29,18 @@ a {
   a:hover {
     color: #1e1e1e;
     text-decoration: underline; }
+
+#article-section .articcle-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  grid-gap: 20px;
+  justify-content: center;
+  padding: 15px; }
+  @media (max-width: 992px) {
+    #article-section .articcle-item {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 5px; } }
+
+.line-through {
+  text-decoration: line-through; }

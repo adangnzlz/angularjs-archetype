@@ -1,7 +1,10 @@
 #menu.vertical-menu {
-  width: calc(100% - 50px);
+  width: 250px;
   padding: 0px 25px;
-  margin-top: 65px; }
+  margin-top: 65px;
+  position: fixed;
+  max-height: calc(100% - 116px);
+  overflow-y: auto; }
   #menu.vertical-menu a {
     line-height: 1;
     color: #1e1e1e;

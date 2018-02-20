@@ -1,0 +1,1 @@
+angular.module("pages",["pages.home","pages.mugs","pages.bandejas"]);

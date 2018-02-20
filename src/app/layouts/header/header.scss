@@ -4,9 +4,11 @@
     width: 100%;
     position: fixed;
     top: 0;
-    height: 50px;
+    height: 100px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    background: $background;
+    z-index: 99;
     flex-direction: row-reverse;
     a.link-header {
         margin-right: 10px;

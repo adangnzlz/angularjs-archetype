@@ -1,0 +1,11 @@
+#bandejas .bandejas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  grid-gap: 20px;
+  justify-content: center;
+  padding: 15px; }
+  @media (max-width: 992px) {
+    #bandejas .bandejas {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 5px; } }

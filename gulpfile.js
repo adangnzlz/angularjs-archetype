@@ -9,8 +9,8 @@ const htmlmin = require('gulp-html-minifier');
 const minify = require('gulp-minify');
 const flatten = require('gulp-flatten');
 var inject = require('gulp-inject');
-
-// var modRewrite = require('connect-modrewrite');
+historyApiFallback = require('connect-history-api-fallback')
+var modRewrite = require('connect-modrewrite');
 
 gulp.task('sass', function () {
     return gulp.src(['./src/app/**/*.scss', './src/styles/styles.scss'])
@@ -65,16 +65,15 @@ gulp.task('assets', function () {
 // watch files for changes and reload
 gulp.task('serve', function () {
     browserSync({
-        server: {}
-        // ,
-        // middleware: modRewrite([
-        //     '!\\.\\w+$ /index.html [L]'
-        // ])
+        server: {
+            baseDir: ['.tmp', 'dist'],
+            middleware: [historyApiFallback()]
+        }
     });
     gulp.watch(['src/assets/**/*'], function (callback) { runSequence('assets') });
     gulp.watch(['dist/**/*.css', 'src/**/*.scss', 'src/**/*.html'], function (callback) { runSequence('sass', 'minifyhtml', 'index') });
     gulp.watch(['src/**/*.js', 'src/index.html'], function (callback) { runSequence('hint', 'minifyhtml', 'jsmin', 'index') });
-    gulp.watch(['index.html'], reload);
+    gulp.watch(['dist/index.html'], reload);
 });
 
 

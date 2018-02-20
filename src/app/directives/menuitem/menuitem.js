@@ -3,7 +3,7 @@ function menuItemDirective() {
         bindToController: true,
         controller: MenuItemController,
         controllerAs: 'vm',
-        restrict: 'C',
+        restrict: 'E',
         scope: {
             controller: '=',
             data: '='
@@ -17,10 +17,8 @@ function menuItemDirective() {
 
         vm.open = function(){
             $scope.hidden = false;
-        }
+        };
 
-        console.log('MenuItemController is loaded');
-        console.log($scope);
     }
 }
 

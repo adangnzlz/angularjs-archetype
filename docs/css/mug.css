@@ -1,0 +1,17 @@
+#mug img {
+  max-width: 100%;
+  min-height: 100%;
+  cursor: pointer; }
+
+#mug .mug_details {
+  margin: 25px 0px; }
+  #mug .mug_details p {
+    font-size: 1rem; }
+    #mug .mug_details p.title {
+      cursor: pointer;
+      font-weight: normal;
+      margin-bottom: 20px; }
+      #mug .mug_details p.title:hover {
+        color: #888b8d; }
+    #mug .mug_details p.price {
+      font-weight: bolder; }

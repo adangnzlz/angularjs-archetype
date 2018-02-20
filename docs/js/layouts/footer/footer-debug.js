@@ -3,7 +3,7 @@ function footerDirective() {
         bindToController: true,
         controller: FooterController,
         controllerAs: 'vm',
-        restrict: 'C',
+        restrict: 'E',
         scope: {
             controller: '='
         },
@@ -11,7 +11,6 @@ function footerDirective() {
     };
 
     function FooterController($scope) {
-        console.log('Footer is loaded');
     }
 }
 

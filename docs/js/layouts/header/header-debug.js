@@ -3,7 +3,7 @@ function headerDirective() {
         bindToController: true,
         controller: HeaderController,
         controllerAs: 'vm',
-        restrict: 'C',
+        restrict: 'E',
         scope: {
             controller: '='
         },
@@ -11,7 +11,6 @@ function headerDirective() {
     };
 
     function HeaderController($scope) {
-        console.log('Header is loaded');
         $scope.numItemsCart = 0;
     }
 }

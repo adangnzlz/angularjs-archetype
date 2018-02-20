@@ -1,0 +1,28 @@
+<div id="article" class="article">
+    <div class="img-container">
+        <img class="article_image" ng-src="{{vm.data.image}}">
+        <span>
+            <i class="fas fa-search-plus"></i>
+        </span>
+    </div>
+    <div class="article_details">
+        <p class="title">{{vm.data.name | uppercase }}</p>
+        <div ng-switch="vm.data.detail.colors[0].sizes.length">
+            <span ng-switch-when="0">
+                <p class="price">no price</p>
+            </span>
+            <span ng-switch-when="1">
+                <p ng-if="vm.data.detail.colors[0].sizes[0].oldPrice" class="price">{{vm.data.detail.colors[0].sizes[0].price | currencycustom }}</p>
+                <p class="oldprice" ng-class="{ 'line-through': vm.data.detail.colors[0].sizes[0].oldPrice}">
+                    {{vm.data.detail.colors[0].sizes[0].oldPrice ? vm.data.detail.colors[0].sizes[0].oldPrice : vm.data.detail.colors[0].sizes[0].price | currencycustom }}
+                </p>
+            </span>
+            <span ng-switch-default>
+                <p ng-if="vm.data.detail.colors[0].sizes[0].oldPrice" class="price">{{vm.data.detail.colors[0].sizes | rangeprices: 'price' }}</p>
+                <p class="oldprice" ng-class="{ 'line-through': vm.data.detail.colors[0].sizes[0].oldPrice}">
+                    {{vm.data.detail.colors[0].sizes | rangeprices: (vm.data.detail.colors[0].sizes[0].oldPrice ? 'oldPrice' : 'price' )}}
+                </p>
+            </span>
+        </div>
+    </div>
+</div>

@@ -22,16 +22,17 @@ body {
     >div {
         // @include box-shadow(1px, 1px, 1px, 0.1);
     }
-    .header {
+    header {
         grid-column: span 2;
     }
-    .menu {
-        grid-row: span 2;
+    menu {
+        grid-row: 2 / -1;
+        padding: 0px;
     }
     .content {
         margin-top: 50px;
     }
-    .footer {}
+    footer {}
 }
 
 a {
@@ -41,4 +42,23 @@ a {
         color: $primary;
         text-decoration: underline;
     }
+}
+
+#article-section {
+    .articcle-item {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        grid-gap: 20px;
+        justify-content: center;
+        padding: 15px;
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 5px;
+        }
+    }
+}
+
+.line-through {
+    text-decoration: line-through;
 }

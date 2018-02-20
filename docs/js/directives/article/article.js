@@ -1,0 +1,1 @@
+function articleDirective(){return{bindToController:!0,controller:function($scope){vm=this},controllerAs:"vm",restrict:"E",scope:{controller:"=",data:"="},templateUrl:"./templates/article.html"}}angular.module("directives.article",[]).directive("article",articleDirective);

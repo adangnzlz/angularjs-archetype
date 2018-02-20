@@ -10,8 +10,11 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
+    "angular-i18n": "^1.6.9",
     "browser-sync": "^2.23.6",
-    "connect-modrewrite": "^0.10.2"
+    "connect-modrewrite": "^0.10.2",
+    "gulp-flatten": "^0.4.0",
+    "gulp-html-minifier": "^0.1.8"
   },
   "devDependencies": {
     "gulp": "^3.9.0",

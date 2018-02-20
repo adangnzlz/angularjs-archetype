@@ -1,0 +1,35 @@
+#article .img-container {
+  position: relative; }
+  #article .img-container img {
+    max-width: 100%;
+    min-height: 100%;
+    cursor: pointer; }
+  #article .img-container span {
+    display: none;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    height: 30px;
+    width: 30px;
+    cursor: pointer; }
+    #article .img-container span i {
+      font-size: 30px;
+      color: #888b8d; }
+  #article .img-container:hover span {
+    display: block; }
+
+#article .article_details {
+  margin: 25px 0px; }
+  #article .article_details p {
+    margin-bottom: 0px;
+    font-size: 1rem;
+    font-weight: bolder; }
+    #article .article_details p.title {
+      cursor: pointer;
+      font-weight: normal;
+      margin-bottom: 20px; }
+      #article .article_details p.title:hover {
+        font-weight: bolder;
+        color: #888b8d; }
+    #article .article_details p.price {
+      color: #cc0256; }

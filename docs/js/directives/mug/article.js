@@ -1,0 +1,1 @@
+function mugDirective(){return{bindToController:!0,controller:function($scope){vm=this},controllerAs:"vm",restrict:"E",scope:{controller:"=",data:"="},templateUrl:"./templates/mug.html"}}angular.module("directives.mug",[]).directive("mug",mugDirective);

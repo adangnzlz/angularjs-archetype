@@ -1,0 +1,1 @@
+function bandejasDirective(){return{bindToController:!0,controller:function($scope,bandejasService){bandejasService.getBandejas().success(function(data){$scope.bandejas=data.products})},controllerAs:"vm",restrict:"E",scope:{controller:"="},templateUrl:"./templates/bandejas.html"}}angular.module("pages.bandejas",[]).directive("bandejas",bandejasDirective);

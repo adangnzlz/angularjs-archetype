@@ -1,0 +1,1 @@
+function mugsDirective(){return{bindToController:!0,controller:function($scope,mugsService){mugsService.getMugs().success(function(data){$scope.mugs=data.products})},controllerAs:"vm",restrict:"E",scope:{controller:"="},templateUrl:"./templates/mugs.html"}}angular.module("pages.mugs",[]).directive("mugs",mugsDirective);
