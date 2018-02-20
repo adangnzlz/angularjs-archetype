@@ -1,1 +1,1 @@
-function footerDirective(){return{bindToController:!0,controller:function($scope){},controllerAs:"vm",restrict:"E",scope:{controller:"="},templateUrl:"./templates/footer.html"}}angular.module("layouts.footer",[]).directive("footer",footerDirective);
+function footerDirective() { return { bindToController: !0, controller: function ($scope) { }, controllerAs: "vm", restrict: "E", scope: { controller: "=" }, templateUrl:"./demo-itx/templates/footer.html"}}angular.module("layouts.footer",[]).directive("footer",footerDirective);

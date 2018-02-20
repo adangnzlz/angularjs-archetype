@@ -4,7 +4,7 @@ angular.module('services.menu', [])
 
         this.getRoutes = function () {
             return $http({
-                url: 'assets/categories.json',
+                url: 'demo-itx/assets/categories.json',
                 method: 'GET'
             });
         };
