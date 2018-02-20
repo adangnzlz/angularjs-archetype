@@ -7,7 +7,7 @@ function menuDirective() {
         scope: {
             controller: '='
         },
-        templateUrl: './demo-itx/templates/menu.html'
+        templateUrl: './templates/menu.html'
     };
 
     function MenuController($scope, menuService) {

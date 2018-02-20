@@ -7,7 +7,7 @@ function headerDirective() {
         scope: {
             controller: '='
         },
-        templateUrl: './demo-itx/templates/header.html'
+        templateUrl: './templates/header.html'
     };
 
     function HeaderController($scope) {

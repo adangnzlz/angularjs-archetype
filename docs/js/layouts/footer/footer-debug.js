@@ -7,7 +7,7 @@ function footerDirective() {
         scope: {
             controller: '='
         },
-        templateUrl: './demo-itx/templates/footer.html'
+        templateUrl: './templates/footer.html'
     };
 
     function FooterController($scope) {
