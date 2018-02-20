@@ -12,13 +12,14 @@ var inject = require('gulp-inject');
 historyApiFallback = require('connect-history-api-fallback')
 var modRewrite = require('connect-modrewrite');
 
+// sass processor
 gulp.task('sass', function () {
     return gulp.src(['./src/app/**/*.scss', './src/styles/styles.scss'])
         .pipe(sass().on('error', sass.logError))
         .pipe(flatten())
         .pipe(gulp.dest('./dist/css'));
 });
-
+// minify html
 gulp.task('minifyhtml', function () {
     gulp.src('./src/app/**/*.html')
         .pipe(htmlmin({ collapseWhitespace: true, ignorePath: '/assets' }))
@@ -26,7 +27,7 @@ gulp.task('minifyhtml', function () {
         .pipe(gulp.dest('./dist/templates'))
 });
 
-
+// minify js
 gulp.task('jsmin', function () {
     gulp.src('src/app/**/*.js')
         .pipe(minify({
@@ -41,6 +42,7 @@ gulp.task('jsmin', function () {
         .pipe(gulp.dest('dist/js'))
 });
 
+// check js errors
 gulp.task('hint', function () {
     return gulp.src('src/**/*.js')
         .pipe(jshint())

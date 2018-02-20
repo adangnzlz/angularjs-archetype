@@ -1,6 +1,8 @@
 
 
 
+// filtro para calcular minimo y maximo precio de un array de tallas, 
+// field indica el campo al que se va a buscar el precio, price/oldPrice
 function pricesRangeFilter() {
     return function (array, field) {
         var result =  array.sort(compare);
@@ -16,8 +18,6 @@ function compare(a, b) {
         return 1;
     return 0;
 }
-
-
 
 
 angular.module('filters.rangeprices', [])
