@@ -28,10 +28,10 @@
 </head>
 
 <body lang="ES-es" ng-app="app-module">
-    <div class="main-layout" ng-controller="app-controller as vm">
+    <div class="main-layout" ng-controller="app-controller as app">
         <header></header>
-        <menu  ng-class="{ 'expanded': show}" ></menu>
-        <div ng-click="vm.close()" class="content">
+        <menu  ng-class="{ 'expanded': app.show}" ></menu>
+        <div ng-click="app.close()" class="content">
             <ui-view autoscroll="false"></ui-view>
         </div>
         <footer></footer>
@@ -64,6 +64,7 @@
 <script src="js/directives/menuitem/menuitem-debug.js"></script>
 <script src="js/directives/landscape/landscape-debug.js"></script>
 <script src="js/directives/article/article-debug.js"></script>
+<script src="js/directives/loadimage/loadimage-debug.js"></script>
 <script src="assets/angular-locale_es-es.js"></script>
 
 

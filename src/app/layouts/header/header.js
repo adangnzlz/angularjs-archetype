@@ -2,7 +2,7 @@ function headerDirective() {
     return {
         bindToController: true,
         controller: HeaderController,
-        controllerAs: 'vm',
+        controllerAs: 'hc',
         restrict: 'E',
         scope: {
             controller: '='
@@ -11,12 +11,12 @@ function headerDirective() {
     };
 
     function HeaderController($scope) {
-        vm = this;
-        $scope.numItemsCart = 0;
+        var hc = this;
+        hc.numItemsCart = 0;
 
-        vm.toggle = function(){
-            $scope.$emit('toggle', {})
-        }
+        hc.toggle = function(){
+            $scope.$emit('toggle', {});
+        };
 
     }
 }

@@ -2,7 +2,7 @@ function footerDirective() {
     return {
         bindToController: true,
         controller: FooterController,
-        controllerAs: 'vm',
+        controllerAs: 'fc',
         restrict: 'E',
         scope: {
             controller: '='

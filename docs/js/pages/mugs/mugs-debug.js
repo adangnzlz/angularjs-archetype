@@ -2,7 +2,7 @@ function mugsDirective() {
     return {
         bindToController: true,
         controller: MugsController,
-        controllerAs: 'vm',
+        controllerAs: 'mc',
         restrict: 'E',
         scope: {
             controller: '='
@@ -11,9 +11,9 @@ function mugsDirective() {
     };
 
     function MugsController($scope, mugsService) {
-
+        var mc = this;
         mugsService.getMugs().success(function (data) {
-            $scope.mugs = data.products;
+            mc.mugs = data.products;
         });
     }
 }

@@ -2,7 +2,7 @@ function homeDirective() {
     return {
         bindToController: true,
         controller: HomeController,
-        controllerAs: 'vm',
+        controllerAs: 'hc',
         restrict: 'E',
         scope: {
             controller: '='
@@ -11,6 +11,7 @@ function homeDirective() {
     };
 
     function HomeController($scope) {
+        var hc = this;
     }
 }
 

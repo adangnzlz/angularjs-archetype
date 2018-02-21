@@ -1,8 +1,8 @@
 <div id="menuitem">
-    <a ng-if="!vm.data.despliega" ng-click="vm.close()" ui-sref="{{vm.data.name.toLowerCase()}}" ui-sref-active="active">{{vm.data.name}}</a>
-    <a ng-if="vm.data.despliega" ng-click="vm.open()">{{vm.data.name}}</a>
-    <ul  ng-if="vm.data.despliega" class="submenu" ng-class="{ 'hide' : hidden} ">
-        <li ng-repeat="subitem in vm.data.subcategories">
+    <a ng-if="!mic.data.despliega" ng-click="mic.close()"  ng-bind="::mic.data.name" ui-sref="{{::mic.data.name.toLowerCase()}}" ui-sref-active="active"></a>
+    <a ng-if="mic.data.despliega" ng-click="mic.open()" ng-bind="::mic.data.name"></a>
+    <ul  ng-if="mic.data.despliega" class="submenu" ng-class="{ 'hide' : mic.hidden } ">
+        <li ng-repeat="subitem in ::mic.data.subcategories">
             <menuitem  data="subitem"></menuitem>
         </li>
     </ul>

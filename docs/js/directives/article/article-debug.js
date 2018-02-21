@@ -2,7 +2,7 @@ function articleDirective() {
     return {
         bindToController: true,
         controller: ArticleController,
-        controllerAs: 'vm',
+        controllerAs: 'ac',
         restrict: 'E',
         scope: {
             controller: '=',
@@ -12,7 +12,8 @@ function articleDirective() {
     };
 
     function ArticleController($scope) {
-        vm = this;
+        var ac = this;
+        ac.loaded = false;
     }
 }
 

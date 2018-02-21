@@ -3,17 +3,17 @@
     angular
         .module('app-module')
         .controller('app-controller', function ($scope) {
-            var vm = this;
-            $scope.show = false;
+            var app = this;
+            app.show = false;
 
             $scope.$on('toggle', function (event, data) {
-                $scope.show = !$scope.show;
-            })
+                app.show = !app.show;
+            });
             $scope.$on('close', function (event, data) {
-                vm.close();
-            })
-            vm.close = function(){
-                $scope.show = false;
-            }
+                app.close();
+            });
+            app.close = function(){
+                app.show = false;
+            };
         });
 })();

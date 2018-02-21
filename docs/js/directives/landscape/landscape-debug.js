@@ -2,7 +2,7 @@ function landscapeDirective() {
     return {
         bindToController: true,
         controller: LandscapeController,
-        controllerAs: 'vm',
+        controllerAs: 'lc',
         restrict: 'E',
         scope: {
             controller: '=',
@@ -14,6 +14,8 @@ function landscapeDirective() {
     };
 
     function LandscapeController($scope) {
+        var lc = this;
+        lc.loaded = false;
     }
 }
 

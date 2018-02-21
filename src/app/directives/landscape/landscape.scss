@@ -3,6 +3,12 @@
 #landscape {
     padding: 10px;
     position: relative;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    &.show {
+        opacity: 1;
+    }
     .img_home {
         max-height: 100%;
         max-width: 100%;

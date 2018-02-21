@@ -2,7 +2,7 @@ function menuDirective() {
     return {
         bindToController: true,
         controller: MenuController,
-        controllerAs: 'vm',
+        controllerAs: 'mc',
         restrict: 'E',
         scope: {
             controller: '='
@@ -11,9 +11,9 @@ function menuDirective() {
     };
 
     function MenuController($scope, menuService) {
-        vm = this;
+        var mc = this;
         menuService.getRoutes().success(function (data) {
-            $scope.data = data;
+            mc.data = data;
         });
     }
 }

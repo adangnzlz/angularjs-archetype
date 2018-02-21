@@ -3,7 +3,7 @@
 
 
     function config($locationProvider, $urlRouterProvider, $stateProvider) {
-        $locationProvider.html5Mode(false);
+        // $locationProvider.html5Mode(true);
         $urlRouterProvider.otherwise("/");
     }
 

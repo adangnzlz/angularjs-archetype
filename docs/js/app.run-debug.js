@@ -2,7 +2,7 @@
     'use strict';
 
 
-    function run($q, $rootScope, $state, menuService, $appState) {
+    function run($q, $rootScope, $state, $stateParams, menuService, $appState) {
          // Llamada a servicio para recuperar el json de categories.
         menuService.getRoutes().success(function (data) {
             // se crea el estado home de manera estática

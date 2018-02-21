@@ -2,7 +2,7 @@ function bandejasDirective() {
     return {
         bindToController: true,
         controller: BandejasController,
-        controllerAs: 'vm',
+        controllerAs: 'bc',
         restrict: 'E',
         scope: {
             controller: '='
@@ -11,8 +11,9 @@ function bandejasDirective() {
     };
 
     function BandejasController($scope, bandejasService) {
+        var bc = this;
         bandejasService.getBandejas().success(function (data) {
-            $scope.bandejas = data.products;
+            bc.bandejas = data.products;
         });
     }
 }

@@ -1,3 +1,21 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+  display: none !important; }
+
+ng\:form {
+  display: block; }
+
+.ng-animate-shim {
+  visibility: hidden; }
+
+.ng-anchor {
+  position: absolute; }
+
 html {
   font-size: 62.5%; }
 
@@ -29,7 +47,8 @@ body {
 
 .main-layout .content {
   margin-top: 100px;
-  margin-left: 250px; }
+  margin-left: 250px;
+  min-height: 500px; }
   @media (max-width: 900px) {
     .main-layout .content {
       margin-left: 0px; } }

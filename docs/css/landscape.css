@@ -1,6 +1,11 @@
 #landscape {
   padding: 10px;
-  position: relative; }
+  position: relative;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+  #landscape.show {
+    opacity: 1; }
   #landscape .img_home {
     max-height: 100%;
     max-width: 100%; }
