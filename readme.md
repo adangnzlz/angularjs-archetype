@@ -1,4 +1,7 @@
 
+# Ejemplo aplicación básica con AngularJS, imitacin web Zara Home.
+
+
 Enlace a la demo: [demo](https://adangnzlz.github.io/demo-itx)
 
 Probado con versiones de node:
